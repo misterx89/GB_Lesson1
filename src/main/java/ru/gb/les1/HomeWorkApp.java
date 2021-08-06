@@ -1,13 +1,12 @@
 package ru.gb.les1;
 
-import java.net.SocketOption;
-
 public class HomeWorkApp {
     public static void main(String[] args) {
         printThreeWords();
         checkSumSign();
         printColor();
         compareNumbers();
+        getHypotenuseLength(10, 20);
     }
 
     public static void printThreeWords() {
@@ -41,14 +40,20 @@ public class HomeWorkApp {
     }
 
     public static void compareNumbers() {
-        int a=8;
-        int b=45;
+        int a = 8;
+        int b = 45;
 
-        if (a>=b){
+        if (a >= b) {
             System.out.println("a >= b");
-        }   else {
+        } else {
             System.out.println("a < b");
         }
+    }
+
+    public static void getHypotenuseLength(double a, double b) {
+        int s = 2;
+        double Length = Math.sqrt((Math.pow(a, s) + Math.pow(b, s)));
+        System.out.println(Length);
     }
 }
 
