@@ -6,8 +6,7 @@ public class HomeWorkApp {
         checkNumber(9);
         System.out.println(checkReturnNumber(-50));
         showString("Тест", 5);
-        //System.out.println(leapYear(2020));
-        leapYear(2021);
+        System.out.println(leapYear(2021));
     }
 
     public static boolean checkSum(int a, int b) {
@@ -43,13 +42,13 @@ public class HomeWorkApp {
         }
     }
 
-    public static void leapYear(int thisYear) {
+    public static boolean leapYear(int thisYear) {
         if((thisYear%4==0) && thisYear%4==0){
-            System.out.println("Шаг 1 Високосный");
+            return true;
         } else if ((thisYear%4==0) && (thisYear%100==0) && (thisYear%400==0)){
-            System.out.println("Шаг 2 Високосный");
+            return true;
         }   else {
-            System.out.println("Шаг 3 Не високосный");
+            return false;
         }
     }
 }
