@@ -3,6 +3,7 @@ package ru.gb.les2;
 public class HomeWorkApp {
     public static void main(String[] args) {
         System.out.println(checkSum(10,6));
+        checkNumber(-9);
     }
     public static boolean checkSum(int a, int b) {
         int sum = a+b;
@@ -14,4 +15,12 @@ public class HomeWorkApp {
             return false;
         }
     }
+    public static void checkNumber(int n){
+        if (n>=0){
+            System.out.println("Положительное число");
+        } else {
+            System.out.println("Отрицательные число");
+        }
+    }
+
 }
