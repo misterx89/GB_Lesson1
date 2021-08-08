@@ -7,7 +7,7 @@ public class HomeWorkApp {
         System.out.println(checkReturnNumber(-50));
         showString("Тест", 5);
         //System.out.println(leapYear(2020));
-        leapYear(2004);
+        leapYear(2021);
     }
 
     public static boolean checkSum(int a, int b) {
@@ -44,22 +44,12 @@ public class HomeWorkApp {
     }
 
     public static void leapYear(int thisYear) {
-        float step1 = thisYear % 4;
-        float step2 = thisYear % 100;
-        float step3 = thisYear % 400;
-
-        if (step1 != 0) {
-            System.out.println("step1 "+ step1);
-            //return false;
-        } else if (step2 != 0) {
-            System.out.println("step2 "+ step2);
-            //return false;
-        } else if (step3 != 0) {
-            System.out.println("step3 "+ step3);
-            //return false;
-        } else {
-            System.out.println("step3 "+ step3);
-            //return true;
+        if((thisYear%4==0) && thisYear%4==0){
+            System.out.println("Шаг 1 Високосный");
+        } else if ((thisYear%4==0) && (thisYear%100==0) && (thisYear%400==0)){
+            System.out.println("Шаг 2 Високосный");
+        }   else {
+            System.out.println("Шаг 3 Не високосный");
         }
     }
 }
