@@ -6,7 +6,7 @@ public class HomeWorkApp {
         checkSumSign();
         printColor();
         compareNumbers();
-        getHypotenuseLength(10, 20);
+        System.out.println(getHypotenuseLength(10, 20));
     }
 
     public static void printThreeWords() {
@@ -50,12 +50,19 @@ public class HomeWorkApp {
         }
     }
 
-    public static void getHypotenuseLength(double a, double b) {
+    public static double getHypotenuseLength(double a, double b) {
         int s = 2;
         double Length = Math.sqrt((Math.pow(a, s) + Math.pow(b, s)));
-        System.out.println(Length);
+        return Length;
     }
 }
+
+
+
+
+
+
+
 
 
 
